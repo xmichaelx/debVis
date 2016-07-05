@@ -1,0 +1,11 @@
+<template>
+    <require from="../base/number-format"></require>
+    <h6 class="progress-bar-title">
+        ${title}
+
+        <span if.bind="label" class="label pull-right label-${bartype}" innerhtml.bind="value | numberFormat:format:'':max"></span>
+    </h6>
+    <div class="progress progress-xxs">
+        <div class="progress-bar progress-bar-${bartype}" style="width:${width | numberFormat:'0.0%':''}"></div>
+    </div>
+</template>

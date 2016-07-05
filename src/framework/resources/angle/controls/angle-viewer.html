@@ -1,0 +1,25 @@
+<template>
+    <svg style="width: 100%; height: 100%" viewBox="0 0 100 100">
+        <path if.bind="transform1 != undefined && valuePath != undefined" transform.bind="transform1" d="M 0 0" d.bind="valuePath" style.bind="vpathstyle" />
+        <path if.bind="transform1 != undefined && targetPath != undefined"transform.bind="transform1" d="M 0 0" d.bind="targetPath" style.bind="tpathstyle" />
+
+        <path if.bind="transform2 != undefined && valuePath != undefined" transform.bind="transform2" d="M 0 0" d.bind="valuePath" style.bind="vpathstyle" visibility.bind="visibility"/>
+        <path if.bind="transform2 != undefined && targetPath != undefined" transform.bind="transform2" d="M 0 0" d.bind="targetPath" style.bind="tpathstyle" visibility.bind="visibility" />
+
+        <text text-anchor="end">
+            <tspan x="49" y="55" font-size.bind="textsize" style.bind="primarystyle">${valuePrimary}</tspan>
+            <tspan x="67" y="55" font-size.bind="textsize - 6" style.bind="textstyle">${valueSecondary}</tspan>
+            <tspan x="83" y="55" font-size.bind="textsize - 6" style.bind="textstyle">${valueTertiary}</tspan>
+        </text>
+
+        <text x="45" y="45" text-anchor="start" font-size.bind="textsize - 9" style.bind="textstyle">${valuesign}</text>
+
+        <text text-anchor="end">
+            <tspan x="48" y="75" font-size.bind="textsize - 9" style.bind="primarystyle">${targetPrimary}</tspan>
+            <tspan x="60" y="75" font-size.bind="textsize - 13" style.bind="textstyle">${targetSecondary}</tspan>
+            <tspan x="68" y="75" font-size.bind="textsize - 13" style.bind="textstyle">${targetTertiary}</tspan>
+        </text>
+
+        <text x="45" y="69" text-anchor="start" font-size.bind="textsize - 14" style.bind="textstyle">${targetsign}</text>
+    </svg>
+</template>

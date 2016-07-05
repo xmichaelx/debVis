@@ -1,0 +1,10 @@
+<template>
+  <require from="./nav-pane" as="nav-pane"></require>
+  <aside class="main-sidebar">
+    <section class="sidebar">
+      <content select="sidebar-header"></content>
+      <nav-pane router.bind="router"></nav-pane>
+      <content select="sidebar-footer"></content>
+    </section>
+  </aside>
+</template>

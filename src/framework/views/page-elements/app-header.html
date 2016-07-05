@@ -1,0 +1,46 @@
+<template>
+  <require from="./user-menu" as="user-menu"></require>
+
+  <header class="main-header">
+    <a class="logo" href="/#">
+      <span class="logo-mini">
+        <i class="tutor tutor-core fa-2x media-middle"></i>
+      </span>
+      <span class="logo-lg">
+        <i class="tutor tutor-core media-middle"></i>
+        <b class="media-middle">debVis Laboratory</b>
+      </span>
+    </a>
+    <nav class="navbar navbar-static-top" role="navigation">
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button"
+                                                                 title="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <content select="navbar-elements"></content>
+
+          <li class="dropdown user-menu">
+            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"
+                                                           title="You are
+                                                           ${user.isLoggedIn ? 'logged
+                                                           in':'logged out'}">
+              <i class="fa fa-user"></i>
+              <span class="label"><i class="fa fa-circle text-${user.isLoggedIn ?
+              'aqua':'red'}"></i></span>
+            </a>
+            <ul class="dropdown-menu">
+              <user-menu></user-menu>
+            </ul>
+          </li>
+          <li>
+            <a href="#" data-toggle="control-sidebar" title="Settings">
+              <i class="fa fa-cogs"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+</template>

@@ -1,0 +1,7 @@
+<template>
+    <svg style="width: 100%; height: 100%" viewBox="0 0 100 100">
+        <path transform="rotate(90 50 50)" d="M 1 1" d.bind="path" style.bind="pathstyle" />
+        <text x="62" y="55" text-anchor="end" font-size.bind="textsize" style.bind="textstyle">${_value}</text>
+        <text x="62" y="55" text-anchor="start" font-size.bind="textsize - 10" style.bind="signstyle" >%</text>
+    </svg>
+</template>

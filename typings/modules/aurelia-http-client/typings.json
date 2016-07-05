@@ -1,0 +1,8 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/aurelia/http-client/55aa7b79b607d377af58bbdaebdab67391774050/dist/aurelia-http-client.d.ts",
+    "raw": "github:aurelia/http-client/dist/aurelia-http-client.d.ts#55aa7b79b607d377af58bbdaebdab67391774050",
+    "typings": "https://raw.githubusercontent.com/aurelia/http-client/55aa7b79b607d377af58bbdaebdab67391774050/dist/aurelia-http-client.d.ts"
+  }
+}

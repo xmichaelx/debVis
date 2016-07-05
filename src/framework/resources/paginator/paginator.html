@@ -1,0 +1,36 @@
+<template>
+    <ul class="pagination ${class}" css="${style}">
+        <li class="${currentPage === 0 ? 'disabled' : ''}">
+            <a class="pointer" aria-label="Previous"
+               click.trigger="changePage(currentPage - 1)"
+               if.bind="currentPage > 0">
+                <span aria-hidden="true">«</span>
+            </a>
+            <a class="pointer" aria-label="Previous"
+               if.bind="currentPage === 0">
+                <span aria-hidden="true">«</span>
+            </a>
+        </li>
+        <li repeat.for="page of pages"
+            show.bind="$parent.pages && $parent.pages.length > 0"
+            class="${page === $parent.currentPage ? 'active' : ''}">
+            <a class="pointer"
+               click.trigger="$parent.changePage(page)">${page + 1}</a>
+        </li>
+        <li show.bind="!pages || pages.length === 0"
+            class="active">
+            <a class="pointer">1</a>
+        </li>
+        <li class="${(currentPage >= totalPages - 1 || totalPages <= 1) ? 'disabled' : ''}">
+            <a class="pointer" aria-label="Next"
+               click.trigger="changePage(currentPage + 1)"
+               if.bind="currentPage < totalPages - 1 && totalPages > 1">
+                <span aria-hidden="true">»</span>
+            </a>
+            <a class="pointer" aria-label="Next"
+               if.bind="currentPage >= totalPages - 1 || totalPages <= 1">
+                <span aria-hidden="true">»</span>
+            </a>
+        </li>
+    </ul>
+</template>

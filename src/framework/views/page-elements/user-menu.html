@@ -1,0 +1,37 @@
+<template>
+    <li class="user-header">
+        <!--<img src="images/avatar.gif" class="img-circle" alt="User Image">-->
+        <p>
+            ${user.name} ${user.surname}
+            <small>${user.position}</small>
+        </p>
+    </li>
+
+    <li class="user-body">
+        <div class="col-xs-12">
+            <a href="javascript:;">
+                <progress-bar title.bind="'Observing time left'" warn.bind="true"
+                              min.bind="observingTimeMin" value.bind="observingTimeValue" max.bind="observingTimeMax"
+                              reversed.bind="observingTimeReversed" label.bind="true" format.bind="'hours'"></progress-bar>
+            </a>
+        </div>
+        <div class="col-xs-12">
+            <a href="javascript:;">
+                <progress-bar title.bind="'Astro drive'" warn.bind="true"
+                              min.bind="astroDriveMin" value.bind="astroDriveValue" max.bind="astroDriveMax"
+                              reversed.bind="astroDriveReversed" label.bind="true" format.bind="'0.0b'"></progress-bar>
+            </a>
+        </div>
+    </li>
+
+    <li class="user-footer">
+        <div class="pull-left">
+            <a href="https://sybilla-usermanagement.azurewebsites.net/#/profile" class="btn btn-default btn-flat">Profile</a>
+        </div>
+        <div class="pull-right">
+            <a href="#" if.bind="!user.isLoggedIn" click.trigger="userService.login()" class="btn btn-default btn-flat">Sign in</a>
+            <a href="#" if.bind="user.isLoggedIn" click.trigger="userService.signout()" class="btn btn-default btn-flat">Sign out</a>
+        </div>
+    </li>
+
+</template>

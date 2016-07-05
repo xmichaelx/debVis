@@ -1,0 +1,15 @@
+<template>
+    <require from="framework/resources/angle/format/angle-format"></require>
+
+    <div class="input-group">
+        <span class="input-group-btn">
+            <button ref="downButton" class="btn btn-default input-angle-down" type="button" ><span class="glyphicon glyphicon-triangle-left"></span></button>
+        </span>
+        <input type="text" ref="angleInput" class="form-control text-right" focus.bind="hasFocus"> <!--value.bind="value | angleFormat:format:angleStyle"-->
+
+        <span class="input-group-btn">
+            <button class="btn btn-default ${praseError ? 'error': ''}" type="button" click.delegate="changeFormat()">${format}</button>
+            <button ref="upButton" class="btn btn-default input-angle-up" type="button" ><span class="glyphicon glyphicon-triangle-right"></span></button>
+        </span>
+    </div>
+</template>

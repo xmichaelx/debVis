@@ -1,0 +1,34 @@
+<template>
+  <div class="wrapper">
+      <app-header>
+        <navbar-elements>
+        </navbar-elements>
+      </app-header>
+
+      <app-sidebar>
+        <sidebar-header>
+          <!--<p>SidebarH of debVis Laboratory app</p>-->
+        </sidebar-header>
+        <sidebar-footer>
+          <!--<p>SidebarF of debVis Laboratory app</p>-->
+        </sidebar-footer>
+      </app-sidebar>
+
+      <div class="content-wrapper" style="padding-bottom:47px">
+          <div class="row">
+              <section class="content col-xs-12">
+                  <router-view></router-view>
+              </section>
+          </div>
+      </div>
+
+      <app-footer>
+        <p>Footer of the debVis Laboratory app</p>
+      </app-footer>
+      <app-control>
+        <p>Control sidebar for debVis Laboratory app</p>        
+      </app-control>
+
+      <div class="control-sidebar-bg"></div>
+  </div>
+</template>

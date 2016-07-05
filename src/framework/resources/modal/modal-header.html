@@ -1,0 +1,17 @@
+<template>
+  <div class="modal-header">
+    <button type="button" class="close" aria-label="Close" click.trigger="close()"
+                                        title="Close modal">
+      <span aria-hidden="true"><i class="fa fa-times-circle"></i></span>
+    </button>
+    <button type="button" class="close help" aria-label="help" if.bind="description"
+                                             title="Toggle help">
+      <span aria-hidden="true"><i class="fa fa-question-circle"></i></span>
+    </button>
+
+    <h4 class="modal-title" innerhtml.bind="title"></h4>
+    <h6 class="modal-subtitle text-uppercase" if.bind="subtitle"
+        innerhtml.bind="subtitle"></h6>
+    <div class="help-region" style="display: none;" innerhtml.bind="description"></div>
+  </div>
+</template>

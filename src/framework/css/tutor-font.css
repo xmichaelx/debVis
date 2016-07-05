@@ -1,0 +1,58 @@
+@font-face {
+	font-family: 'tutor-icons';
+	src:url('fonts/tutor-icons.eot');
+	src:url('fonts/tutor-icons.eot') format('embedded-opentype'),
+		url('fonts/tutor-icons.ttf') format('truetype'),
+		url('fonts/tutor-icons.woff') format('woff'),
+		url('fonts/tutor-icons.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.tutor {
+	font-family: 'tutor-icons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.tutor-hardware:before {
+	content: "\e900";
+}
+.tutor-scheduling:before {
+	content: "\e901";
+}
+.tutor-astrodrive:before {
+	content: "\e902";
+}
+.tutor-observing:before {
+	content: "\e903";
+}
+.tutor-core:before {
+	content: "\e904";
+}
+.tutor-tutor:before {
+	content: "\e905";
+}
+.tutor-flatfielding:before {
+	content: "\e906";
+}
+.tutor-dataflow:before {
+	content: "\e907";
+}
+.tutor-monitoring:before {
+	content: "\e908";
+}
+.tutor-focusing:before {
+	content: "\e909";
+}
+
+
+

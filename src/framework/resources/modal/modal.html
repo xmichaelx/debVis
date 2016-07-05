@@ -1,0 +1,20 @@
+<template>
+  <div class="modal-${modalType}" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <modal-header title.bind="title" description.bind="description" 
+           subtitle.bind="subtitle" close.call="controller.cancel()"></modal-header>
+
+         <modal-body if.bind="bodyView" body-view-model.bind="bodyView"
+           body-model.bind="bodyModel"></modal-body>
+
+         <modal-footer>
+           <button type="button" class="btn ${modalType == 'default' ?
+           'btn-transparent':'btn-outline'}" click.trigger="controller.cancel()">
+             <span class="${modalType == 'default' ? 'text-red':''}">${cancelText}</span>
+          </button>
+         </modal-footer>
+      </div>
+    </div>
+  </div>
+</template>

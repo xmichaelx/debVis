@@ -1,0 +1,9 @@
+{
+  "resolution": "main",
+  "tree": {
+    "global": "false",
+    "name": "numeral",
+    "type": "typings",
+    "main": "numeral.d.ts"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/aurelia/dialog/4403bdcf4c7bb9c2ce7aacfdc7adf5089f49a43e/dist/aurelia-dialog.d.ts",
+    "raw": "github:aurelia/dialog/dist/aurelia-dialog.d.ts#4403bdcf4c7bb9c2ce7aacfdc7adf5089f49a43e",
+    "typings": "https://raw.githubusercontent.com/aurelia/dialog/4403bdcf4c7bb9c2ce7aacfdc7adf5089f49a43e/dist/aurelia-dialog.d.ts"
+  }
+}

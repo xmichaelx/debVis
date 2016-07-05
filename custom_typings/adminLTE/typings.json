@@ -1,0 +1,9 @@
+{
+  "resolution": "main",
+  "tree": {
+    "global": "false",
+    "name": "adminLTE",
+    "type": "typings",
+    "main": "adminLTE.d.ts"
+  }
+}

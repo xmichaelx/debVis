@@ -1,0 +1,19 @@
+<template>
+    <ul class="sidebar-menu">
+        <li class="header text-gray">Navigation</li>
+        <li repeat.for="route of routes" class="${route.isActive ? 'active treeview' : 'treeview'}">
+            <a href.bind="route.href">
+                <i class="${route.settings.icon} fa-fw"></i><span class="route-title">${route.title}</span>
+                <i if.bind="route.routes" class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu" if.bind="route.routes">
+                <li repeat.for="subroute of route.routes" class="${subroute.isActive ? 'active' : ''}">
+                    <a href.bind="subroute.href">
+                        <i class="${subroute.settings.icon}"></i>
+                        <span>${subroute.title}</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</template>

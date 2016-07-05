@@ -1,0 +1,10 @@
+{
+  "generator-abot": {
+    "name": "debVis",
+    "description": "Laboratory for debVis",
+    "theme": "black",
+    "sidebartheme": "dark",
+    "icon": "core",
+    "title": "debVis Laboratory"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "chai": "^3.5.0",
+    "es6-promise": "^3.1.2",
+    "google-closure-compiler": "^20160208.5.0",
+    "mocha": "^2.4.5",
+    "npm-run-all": "^1.7.0",
+    "rimraf": "^2.5.2",
+    "source-map-support": "^0.4.0",
+    "systemjs-builder": "^0.10.6",
+    "tslint": "^3.7.1",
+    "typescript": "^1.8.9",
+    "xhr2": "^0.1.3"
+  },
+  "description": "debVis - dimensional-embedding-based visualisation library",
+  "version": "0.0.1",
+  "keywords": [
+    "visualisation",
+    "dimensional-embedding",
+    "gld",
+    "gemeral logic diagrams",
+    "dimensional stacking"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:xmichaelx/debvis.git"
+  },
+  "name": "debvis",
+  "homepage": "https://github.com/xmichaelx/debvis#readme",
+  "main": "debvis.js",
+  "author": "Michał Drzał <michal.drzal@gmail.com>",
+  "dependencies": {
+    "es6-promise": "^3.1.2"
+  },
+  "bugs": {
+    "url": "https://github.com/xmichaelx/debvis/issues"
+  },
+  "typings": "debvis.d.ts"
+}

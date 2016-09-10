@@ -10,4 +10,15 @@ export var baseRouter = [
             "icon": "fa fa-th"
         }
     }
+    // {
+    //     "route": "dimensionStacking",
+    //     "moduleId": "views/dimensionStacking",
+    //     "nav": true,
+    //     "auth": false,
+    //     "title": "Dimension Stacking",
+    //     "settings": {
+    //         "subtitle": "App dashboard",
+    //         "icon": "fa fa-th"
+    //     }
+    // }
 ];

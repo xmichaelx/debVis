@@ -32,4 +32,5 @@
 /// <reference path="globals/toastr/index.d.ts" />
 /// <reference path="modules/aurelia-http-client/index.d.ts" />
 /// <reference path="modules/bluebird/index.d.ts" />
+/// <reference path="modules/d3/index.d.ts" />
 /// <reference path="modules/moment/index.d.ts" />

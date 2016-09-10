@@ -25,7 +25,7 @@ import "toastr/build/toastr.css";
 bootstrap((aurelia: Aurelia): void => {
   aurelia.use
     .standardConfiguration()
-    .developmentLogging()
+    // .developmentLogging()
     .plugin("aurelia-dialog")
     .feature("framework")
     //    .plugin('aurelia-auth', (baseConfig) => {
